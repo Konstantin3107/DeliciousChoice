@@ -11,7 +11,7 @@
 .logo {
     position: absolute;
     left: 25px;
-    top: 5px;
+    top: 70px;
     width: 300px;
     height: 300px;
     transition: transform 0.3s ease;
@@ -25,6 +25,11 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 
@@ -86,4 +91,69 @@
 .nav-link.active {
     color: #0984e3;
     font-weight: 500;
+}
+
+
+
+.list_prod {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.prod {
+    text-align: center;
+}
+
+.cont {
+    text-align: center;
+}
+
+.gmail {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.soc-icons {
+    align-content: center;
+}
+
+
+.section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.name{
+    text-align: center;
+}
+
+.name{
+text-align: center;
+}
+
+.second-name{
+    text-align: center;
+}
+
+.e-mail{
+    text-align: center;
+}
+
+.accept{
+    margin-top: 20px;
+    text-align: center;
 }

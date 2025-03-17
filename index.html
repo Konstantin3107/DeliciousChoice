@@ -5,71 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/main.css">
-    <title>Document</title>
+    <title>Delicious Products</title>
 </head>
 <body>
     <header class="header">
         <div class="header_left">
             <a href="/" alt="logo" class="logo">
-                <img src="img/logotip2.png" alt="logo" class="logo_img">
+                <img src="img/logotip_var2.png" alt="logo" class="logo_img">
             </a>
         </div>
         <h1 class="site-title">Delicious Products</h1>
         <nav class="main-nav">
             <ul class="nav-list">
-                <li class="nav-item"><a href='#products' class="nav-link">Products</a></li>
-                <li class="nav-item"><a href='#contact' class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href='#products' class="nav-link">Продукты</a></li>
+                <li class="nav-item"><a href='#contact' class="nav-link">Контакты</a></li>
+                <li class="nav-item"><a href='#register' class="nav-link">Регистрация</a></li>
             </ul>
         </nav>
     </header>
-    <h2 class="prod">Список товаров</h2>
-    <section id="products" class="section">
-        <div class="vegetables">
-            <h2><img src="img/t.png" width="32px" height="32px">Овощи</h2>
-            <p>Помидор <br> Морковь <br> Огурец <br> Батат <br> Картофель <br> Баклажан</p>
-        </div>
-        <div class="fruits">
-            <h2><img src='img/t.png' width="32px" height="32px">Фрукты</h2>
-            <p>Яблоко <br> Банан <br> Мандарин <br> Апельсин <br> Гранат <br> Груша <br> Грейпфрут</p>
-        </div>
-        <div class="sausage">
-            <h2><img src='img/t.png' width="32px" height="32px">Колбаса</h2>
-            <p>Молочная <br> Докторская <br> Сервелат</p>
-        </div>
-        <div class="bakery">
-            <h2><img src='img/t.png' width="32px" height="32px">Выпечка</h2>
-            <p>Булочки <br> Пирожок с колбасой <br> Пончики <br> Пирожок с мясом <br> Беляш</p>
-        </div>
-    </section>
-    <section class="register">
-        <div class="name">
-            <h2>Имя</h2>
-            <form>
-                <input type="text">
-            </form>
-        </div>
-        <div class="second-name">
-            <h2>Фамилия</h2>
-            <form>
-                <input type="text">
-            </form>
-        </div>
-        <div class="e-mail">
-            <h2>Почта</h2>
-            <form>
-                <input type="text">
-            </form>
-        </div>
-        <div class="accept">
-            <form>
-                <button type="submit">Подтвердить</button>
+    <div class="container">
+        <h1 class="list">Список Товаров</h1>
+        <ul class="product-list">
+            <li class="product-item">
+                <img src="img/apple.png" alt="Яблоко" class="product-image">
+                <h2 class="product-name">Яблоко</h2>
+                <p class="product-price">200 руб./кг</p>
+            </li>
+            <li class="product-item">
+                <img src="img/banana.png" alt="Банан" class="product-image">
+                <h2 class="product-name">Банан</h2>
+                <p class="product-price">120 руб./кг</p>
+            </li>
+            <li class="product-item">
+                <img src="img/carrot.png" alt="Морковь" class="product-image">
+                <h2 class="product-name">Морковь</h2>
+                <p class="product-price">250 руб./кг</p>
+            </li>
+            <li class="product-item">
+                <img src="img/tomato.png" alt="Помидор" class="product-image">
+                <h2 class="product-name">Помидор</h2>
+                <p class="product-price">300 руб./кг</p>
+            </li>
+        </ul>
+    </div>
+    <section class="register" id="register">
+        <div class="wrapper">
+            <h2>Регистрация</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Имя">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Фамилия">
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Пароль">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Подтверждение пароля">
+                </div>
+                <div class="input-box button">
+                    <input type="submit" placeholder="Зарегистрироваться">
+                </div>
+                <div class="text">
+                    <h3>Уже зарегистрированы? <a href='#'>Войти</a></h3>
+                </div>
             </form>
         </div>
     </section>
 
-    <h3 class="cont">При возникновении вопросов:</h3>
+    <h3 class="cont" id="contact">При возникновении вопросов:</h3>
     <footer class="footer">
-        <img src="https://yandex-images.clstorage.net/4FkEG8223/133ad8bAUQ/VNK7WGrR4CQAZ9xptSZcm7rMGSdNtMku3bJy4HKO4WUjvm6rxFZDKDCRonpEavQMlMB8pOtMKCxxJFqLHnYaRRbWqxQrlfp9VyHDPb0lWZmnkVo2Ue7Nc8fwLrk2gbc6Ku4BkuRyNEId9NJebxy-D8qVLL_yWzxASDd91m8FeiNT-LlMbO6cIDVDul6hL0GGpLYyCkH02HP1gweeEsutTG6UBqfVWw9qPcvvWmwdsQXPmxOpqXkvW1JCW85bDksjVt6Kfl3xvgEcXJpxng9Nh5CUMAxY_thl16ImmSTDo0V-rjeF_XIzSgbR9X5CEZQH6L4zhaZnAUtBT3r2cjlJAXjqrWtK4ZcqBVi3RKABfZuRhiM0cdzxQuGhAJk01KBmXrobpMB6AVY289dbagKXD-igMKiIXQpTR3B61ngTTStD5KBzTcuCCh1TsUCTOE-8sqkeLEHD63DTsSidDd6IVHmsPK7DST9UM8PfXGURngXogj-ms0IvbXl-V85SFVoXSvqIe2LgtgwmU6hltSx7qqqPAgRS7spl8bUksAHPtmNUixSa03QxUjTx42pIJaAK5oI4gZ1bPXZ6elXffxFGFFHLu01h5okhDni7RroucYeDhjkIaOjTSfGRLIYR055-cZsIp-hgFFga8dh6ax29G9ycDKC0Wi1aR2Rz2kE5ZhxR4r5jVuicLDFRt3-BC1mfj7c5K2PK10DusD2MK9KfT2OONYPqQRJvBt7iWHcVvgjUnDGosEEQWEJFbOlADlgZUuKkd1vriAwiXLtUoCN7mqmgJTJo0dl60po4min4lUJqrzCn_H8cVB_22VNIMasY0KAGta5cCHhGfkHkUBBnHWPeilxRxL4jAmOLYKI5U4ylrzIQT_bXU_-cGLkt87J0TLc1hclXD1YoxcNQRTyBHcKHPJG-TyxXX3VK20smTR5t1Ipfc_WgOjZWtkiXD3upqZUOBUDU9nP_kDmxCcI" width="64px" height="64px" class="soc-icons">
+        <img src="img/gmail.png" width="64px" height="64px" class="soc-icons">
     </footer>
+
+    
 </body>
 </html>
